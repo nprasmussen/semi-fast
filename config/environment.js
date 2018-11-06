@@ -7,12 +7,12 @@ module.exports = function(environment) {
     rootURL: '/',
     locationType: 'auto',
     firebase: {
-      apiKey: "AIzaSyCxi2ogypm_ErxMiWRqOoQn1X6o2CUBQXg",
-      authDomain: "semi-fast.firebaseapp.com",
-      databaseURL: "https://semi-fast.firebaseio.com",
-      projectId: "semi-fast",
-      storageBucket: "semi-fast.appspot.com",
-      messagingSenderId: "657880863375"
+      apiKey: process.env.FIREBASE_API_KEY,
+      authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+      databaseURL: process.env.FIREBASE_DB_URL,
+      projectId: process.env.FIREBASE_PROJECT_ID,
+      storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+      messagingSenderId: process.env.FIREBASE_MSG_SENDER_ID
     },
     EmberENV: {
       FEATURES: {
